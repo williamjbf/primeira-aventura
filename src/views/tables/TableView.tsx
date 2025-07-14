@@ -1,9 +1,11 @@
+import '../../index.css';
+
 import React from "react";
-import {TableHeader} from "./TableHeader";
-import {TagList} from "./TagList";
-import {SessionInfo} from "./SessionInfo";
-import {SessionHistory} from "./SessionHistory";
-import {DescriptionBox} from "./DescriptionBox";
+import {TableHeader} from "../../components/tables/TableHeader/TableHeader.tsx";
+import {TagList} from "../../components/tables/TagList/TagList.tsx";
+import {SessionInfo} from "../../components/tables/SessionInfo/SessionInfo.tsx";
+import {SessionHistory} from "../../components/tables/SessionHistory/SessionHistory.tsx";
+import {DescriptionBox} from "../../components/tables/DescriptionBox/DescriptionBox.tsx";
 
 interface Session {
   title: string;

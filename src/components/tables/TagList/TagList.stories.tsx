@@ -1,4 +1,4 @@
-import { TagList } from "../TagList.tsx";
+import { TagList } from "./TagList.tsx";
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof TagList> = {

@@ -1,7 +1,7 @@
-import '../../../index.css';
+import '../../index.css';
 
 import type { Meta, StoryObj } from '@storybook/react';
-import { TableView } from '../TableView.tsx';
+import { TableView } from './TableView.tsx';
 
 const meta: Meta<typeof TableView> = {
   title: 'Components/Table/TableView',

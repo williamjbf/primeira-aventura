@@ -1,5 +1,5 @@
 import type {Meta, StoryObj} from "@storybook/react";
-import {SessionSummary} from "../SessionSummary";
+import {SessionSummary} from "./SessionSummary.tsx";
 
 const meta: Meta<typeof SessionSummary> = {
   title: "Components/Table/Session/SessionSummary",

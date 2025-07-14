@@ -1,7 +1,5 @@
-import '../../../index.css';
-
-import {TableHeader} from "../TableHeader";
-import {TableActionButton} from "../TableActionButton";
+import {TableHeader} from "./TableHeader.tsx";
+import {TableActionButton} from "../TableActionButton/TableActionButton.tsx";
 import type {Meta, StoryObj} from "@storybook/react";
 
 const meta: Meta<typeof TableHeader> = {

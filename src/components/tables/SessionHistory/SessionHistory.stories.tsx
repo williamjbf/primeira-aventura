@@ -1,4 +1,4 @@
-import { SessionHistory } from "../SessionHistory.tsx";
+import { SessionHistory } from "./SessionHistory.tsx";
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof SessionHistory> = {

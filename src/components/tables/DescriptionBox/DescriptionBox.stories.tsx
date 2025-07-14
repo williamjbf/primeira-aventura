@@ -1,4 +1,4 @@
-import { DescriptionBox } from "../DescriptionBox.tsx";
+import { DescriptionBox } from "./DescriptionBox.tsx";
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof DescriptionBox> = {

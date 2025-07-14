@@ -1,5 +1,5 @@
 import React from "react";
-import TableCard from "./TableCard";
+import TableCard from "../TableCard/TableCard.tsx";
 
 interface TableCardGridProps {
   tables: {

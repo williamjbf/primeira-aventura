@@ -1,10 +1,8 @@
-import '../index.css';
-
 import type {Meta, StoryObj} from '@storybook/react';
-import {TableCardGrid} from './TableCardGrid';
+import {TableCardGrid} from './TableCardGrid.tsx';
 
 const meta: Meta<typeof TableCardGrid> = {
-  title: 'Components/TableCardGrid',
+  title: 'Components/Table/TableCardGrid',
   component: TableCardGrid,
 };
 export default meta;

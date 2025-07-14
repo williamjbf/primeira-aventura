@@ -1,6 +1,6 @@
 import React from 'react';
-import {TableHeader} from "../TableHeader.tsx";
-import TableActionButton from "../TableActionButton.tsx";
+import {TableHeader} from "../../../components/tables/TableHeader/TableHeader.tsx";
+import TableActionButton from "../../../components/tables/TableActionButton/TableActionButton.tsx";
 
 interface SessionInfo {
   title: string;

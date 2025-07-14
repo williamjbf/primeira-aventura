@@ -1,10 +1,8 @@
-import '../index.css';
-
 import type {Meta, StoryObj} from '@storybook/react';
-import {TableCard} from './TableCard';
+import {TableCard} from './TableCard.tsx';
 
 const meta: Meta<typeof TableCard> = {
-  title: 'Components/TableCard',
+  title: 'Components/Table/TableCard',
   component: TableCard,
   parameters: {
     layout: 'centered',
