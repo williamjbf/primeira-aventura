@@ -1,5 +1,8 @@
-import { TableHeader } from "../TableHeader.tsx";
-import type { Meta, StoryObj } from "@storybook/react";
+import '../../../index.css';
+
+import {TableHeader} from "../TableHeader";
+import {TableActionButton} from "../TableActionButton";
+import type {Meta, StoryObj} from "@storybook/react";
 
 const meta: Meta<typeof TableHeader> = {
   title: "Components/Table/TableHeader",
@@ -9,14 +12,26 @@ const meta: Meta<typeof TableHeader> = {
 export default meta;
 type Story = StoryObj<typeof TableHeader>;
 
-export const Default: Story = {
+export const Inscrever: Story = {
   args: {
     imageUrl: "https://placehold.co/112x144",
     title: "Mesa de D&D",
     system: "Dungeons & Dragons 5e",
     gmName: "Mestre João",
-    playerCount: 3,
-    playerMax: 5,
-    onSubscribe: () => alert("Inscrito!"),
+    actionButton: (
+      <TableActionButton variant="subscribe" onClick={() => alert("Inscrito!")}/>
+    ),
+  },
+};
+
+export const Voltar: Story = {
+  args: {
+    imageUrl: "https://placehold.co/112x144",
+    title: "Mesa de D&D",
+    system: "Dungeons & Dragons 5e",
+    gmName: "Mestre João",
+    actionButton: (
+      <TableActionButton variant="back" onClick={() => alert("Voltando...")}/>
+    ),
   },
 };

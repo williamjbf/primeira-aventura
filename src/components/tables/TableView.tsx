@@ -1,9 +1,9 @@
 import React from "react";
-import { TableHeader } from "./TableHeader";
-import { TagList } from "./TagList";
-import { SessionInfo } from "./SessionInfo";
-import { SessionHistory } from "./SessionHistory";
-import { DescriptionBox } from "./DescriptionBox";
+import {TableHeader} from "./TableHeader";
+import {TagList} from "./TagList";
+import {SessionInfo} from "./SessionInfo";
+import {SessionHistory} from "./SessionHistory";
+import {DescriptionBox} from "./DescriptionBox";
 
 interface Session {
   title: string;
@@ -28,23 +28,24 @@ interface TableViewProps {
   onSubscribe: () => void;
 }
 
-export const TableView: React.FC<TableViewProps> = ({
-                                                      imageUrl,
-                                                      title,
-                                                      system,
-                                                      gmName,
-                                                      description,
-                                                      tags,
-                                                      sessionDay,
-                                                      sessionTime,
-                                                      platform,
-                                                      location,
-                                                      contact,
-                                                      playerCount,
-                                                      playerMax,
-                                                      sessionHistory,
-                                                      onSubscribe,
-                                                    }) => {
+export const TableView: React.FC<TableViewProps> = (
+  {
+    imageUrl,
+    title,
+    system,
+    gmName,
+    description,
+    tags,
+    sessionDay,
+    sessionTime,
+    platform,
+    location,
+    contact,
+    playerCount,
+    playerMax,
+    sessionHistory,
+    onSubscribe,
+  }) => {
   return (
     <div className="bg-gray-800 text-white p-6 rounded-xl shadow-xl space-y-6 border border-gray-700">
       {/* Cabeçalho com imagem, título e botão */}
@@ -53,19 +54,25 @@ export const TableView: React.FC<TableViewProps> = ({
         title={title}
         system={system}
         gmName={gmName}
-        playerCount={playerCount}
-        playerMax={playerMax}
         onSubscribe={onSubscribe}
+        actionButton={
+        <button
+          onClick={() => alert("Inscrito!")}
+          className="bg-blue-600 hover:bg-blue-700 transition-colors px-5 py-2 rounded font-semibold text-white flex items-center gap-2 shadow-md"
+          >
+          Inscrever-se ({playerCount}/{playerMax} jogadores)
+        </button>
+        }
       />
 
       {/* Descrição */}
-      <DescriptionBox description={description} />
+      <DescriptionBox description={description}/>
 
       {/* Corpo: informações e histórico */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Coluna Esquerda */}
         <div className="space-y-4">
-          <TagList tags={tags} />
+          <TagList tags={tags}/>
           <SessionInfo
             gmName={gmName}
             sessionDay={sessionDay}
@@ -77,7 +84,7 @@ export const TableView: React.FC<TableViewProps> = ({
         </div>
 
         {/* Coluna Direita */}
-        <SessionHistory sessionHistory={sessionHistory} />
+        <SessionHistory sessionHistory={sessionHistory}/>
       </div>
     </div>
   );
