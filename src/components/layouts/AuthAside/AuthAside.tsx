@@ -17,7 +17,7 @@ const AuthAside: React.FC<AuthAsideProps> = ({
         {title}
       </div>
       <div className="text-center">
-        <img src={logoSrc} alt="Logo do Projeto" className="w-200 h-200 mx-auto" />
+        <img src={logoSrc} alt="Logo do Projeto" className="max-w-200 max-h-200 mx-auto" />
         <hr className="my-4 border-t border-gray-700 w-16 mx-auto" />
         <p className="text-sm text-gray-400 italic">{subtitle}</p>
       </div>
