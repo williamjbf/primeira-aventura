@@ -20,7 +20,7 @@ export const TableCardGrid: React.FC<TableCardGridProps> = ({tables}) => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       {columns.map((column, colIdx) => (
-        <div key={colIdx} className="flex flex-col gap-2">
+        <div key={colIdx} className="flex flex-col gap-2 bg-gray-800">
           {column.map((table, idx) => (
             <TableCard key={idx} {...table} />
           ))}
