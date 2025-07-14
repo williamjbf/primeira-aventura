@@ -2,7 +2,7 @@ import { SessionHistory } from "./SessionHistory.tsx";
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof SessionHistory> = {
-  title: "Components/Table/SessionHistory",
+  title: "Components/Table/Session/SessionHistory",
   component: SessionHistory,
 };
 

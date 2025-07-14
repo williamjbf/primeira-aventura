@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { SessionView } from './SessionView.tsx';
 
 const meta: Meta<typeof SessionView> = {
-  title: 'Components/Table/Session/SessionView',
+  title: 'Views/Table/Session/SessionView',
   component: SessionView,
 };
 export default meta;

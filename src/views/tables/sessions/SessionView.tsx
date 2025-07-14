@@ -61,7 +61,7 @@ export const SessionView: React.FC<SessionViewProps> = (
               <li
                 key={idx}
                 className={`flex justify-between items-center p-3 rounded-md border border-gray-700 transition-colors ${session.title === sessionTitle
-                  ? 'bg-blue-800 text-white font-semibold'
+                  ? 'bg-blue-600 text-white font-semibold'
                   : 'bg-gray-800 hover:bg-gray-700 text-gray-100'
                 }`}
               >

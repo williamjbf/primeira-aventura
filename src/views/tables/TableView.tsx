@@ -3,8 +3,8 @@ import '../../index.css';
 import React from "react";
 import {TableHeader} from "../../components/tables/TableHeader/TableHeader.tsx";
 import {TagList} from "../../components/tables/TagList/TagList.tsx";
-import {SessionInfo} from "../../components/tables/SessionInfo/SessionInfo.tsx";
-import {SessionHistory} from "../../components/tables/SessionHistory/SessionHistory.tsx";
+import {SessionInfo} from "../../components/tables/sessions/SessionInfo/SessionInfo.tsx";
+import {SessionHistory} from "../../components/tables/sessions/SessionHistory/SessionHistory.tsx";
 import {DescriptionBox} from "../../components/tables/DescriptionBox/DescriptionBox.tsx";
 
 interface Session {

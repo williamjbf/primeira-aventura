@@ -2,7 +2,7 @@ import { SessionInfo } from "./SessionInfo.tsx";
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof SessionInfo> = {
-  title: "Components/Table/SessionInfo",
+  title: "Components/Table/Session/SessionInfo",
   component: SessionInfo,
 };
 
