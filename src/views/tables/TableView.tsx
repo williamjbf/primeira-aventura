@@ -59,7 +59,7 @@ export const TableView: React.FC<TableViewProps> = (
         onSubscribe={onSubscribe}
         actionButton={
         <button
-          onClick={() => alert("Inscrito!")}
+          onClick={() => {onSubscribe(); alert("Inscrito!")}}
           className="bg-blue-600 hover:bg-blue-700 transition-colors px-5 py-2 rounded font-semibold text-white flex items-center gap-2 shadow-md"
           >
           Inscrever-se ({playerCount}/{playerMax} jogadores)
